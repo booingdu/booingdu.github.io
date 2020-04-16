@@ -164,22 +164,22 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           defer="defer"
         ></script>
       - | # 网站背景图片，分竖屏、宽屏；改链接即可，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在/assets/image/background.jpg，那就改成url(/assets/image/background.jpg)
-    #    <style>
-    #      .wrap {
-    #        min-height: 100vh;
-    #        display: inline-block;
-    #        background-size: 100% 100%;
-    #        background-position: center top;
-    #        background-repeat: no-repeat;
-    #        background-attachment: fixed;
-    #        background-image: url(/assets/image/forum1200x7500.jpg);
-    #      }
-    #      @media (min-aspect-ratio: 2400/1850) {
-    #        .wrap {
-    #          background-image: url(/assets/image/forum1200x7500.jpg);
-    #        }
-    #      }
-    #    </style>
+        <style>
+          .wrap {
+            min-height: 100vh;
+            display: inline-block;
+            background-size: 100% 100%;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: url(/assets/image/forum1200x7500.jpg);
+          }
+          @media (min-aspect-ratio: 2400/1850) {
+            .wrap {
+              background-image: url(/assets/image/forum1200x7500.jpg);
+            }
+          }
+        </style>
       - | # 网站字体
         <style>
           html,
@@ -404,7 +404,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             box-shadow: 0 0 .75rem rgba(0, 0, 0, 0.1);
             background-color: rgba(255, 255, 255, 0.9);
             animation: animationAppear 2s;
-            opacity:0.6; #透明度
+            opacity:0.7; #透明度
           }
           @keyframes animationAppear {
             0%,
